@@ -4,10 +4,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 const Stack = createNativeStackNavigator();
-import InicioE from "./Empresa.js/InicioE";
-import NuevoE from "./Empresa.js/NuevoE";
-import DetallesE from "./Empresa.js/DetallesE";
-import EditarE from "./Empresa.js/EditarE";
+import InicioE from "../Empresa.js/InicioE";
+import NuevoE from "../Empresa.js/NuevoE";
+import DetallesE from "../Empresa.js/DetallesE";
+import EditarE from "../Empresa.js/EditarE";
 
 
 const ListaEmpresas = () => {

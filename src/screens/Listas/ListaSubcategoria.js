@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, ScrollView } from "react-native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import InicioS from "./SubCategoria/InicioS";
-import NuevoS from "./SubCategoria/NuevoS";
-import DetallesS from "./SubCategoria/DetallesS";
-import EditarS from "./SubCategoria/EditarS";
+import InicioS from "../SubCategoria/InicioS";
+import NuevoS from "../SubCategoria/NuevoS";
+import DetallesS from "../SubCategoria/DetallesS";
+import EditarS from "../SubCategoria/EditarS";
 
 const Stack = createNativeStackNavigator();
 

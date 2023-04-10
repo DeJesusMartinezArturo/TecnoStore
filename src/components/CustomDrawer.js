@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text, ImageBackground, Image, Touchable } from "react-native";
 import { DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer";
 import { Avatar } from "native-base";
 import Icon from "react-native-vector-icons/Ionicons";
 import { TouchableOpacity } from "react-native-gesture-handler";
-
+import { AuthContext } from "../context/AuthContext";
 
 const CustomDrawer = (props) => {
+    const { logout } = useContext(AuthContext);
     return (
         <View style={{ flex: 1 }}>
             <DrawerContentScrollView {...props}
@@ -29,6 +30,14 @@ const CustomDrawer = (props) => {
                 </View>
 
             </DrawerContentScrollView>
+            <TouchableOpacity onPress={() => { logout() }} style={{ paddingVertical: 15 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Icon name="exit-outline" size={22} />
+                    <Text style={{ fontSize: 15, marginLeft: 5 }}>
+                        Salir
+                    </Text>
+                </View>
+            </TouchableOpacity>
 
         </View >
 

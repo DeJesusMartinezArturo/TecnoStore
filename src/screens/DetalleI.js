@@ -7,9 +7,8 @@ import {
     StyleSheet,
 } from 'react-native';
 
-import Icon from "react-native-vector-icons/Ionicons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Avatar } from "native-base";
+
 
 const DetalleI = ({ navigation }) => {
     return (

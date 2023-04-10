@@ -62,21 +62,9 @@ const Perfil = ({ navigation }) => {
                     <Text style={{ color: "#000000", marginLeft: 20 }}>Contraseña</Text>
                 </View>
 
-                <TouchableOpacity onPress={() => navigation.navigate('Login')}
-                    style={styles.row}>
-
-                    <View style={{ flexDirection: 'row', alignItems: 'center' }} >
-                        <Icon name='exit-outline' size={29} />
-                        <Text style={{ color: "#000000", marginLeft: 20 }}>
-                            Cerrar sesión
-                        </Text>
-                    </View>
-
-                </TouchableOpacity>
-
             </View>
             <View style={{ paddingHorizontal: 50 }}>
-                <TouchableOpacity onPress={() => navigation.navigate('EditarPerfil')}
+                <TouchableOpacity onPress={() => navigation.navigate('Perfil')}
                     style={{
                         backgroundColor: '#4953E0',
                         padding: 15,

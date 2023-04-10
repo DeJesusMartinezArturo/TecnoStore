@@ -61,7 +61,7 @@ const Inicio = ({ navigation }) => {
                     }) => <Box borderBottomWidth="1" _dark={{
                         borderColor: "muted.60"
                     }} borderColor="muted.900" pl={["0", "7"]} pr={["0", "5"]} py="4">
-                            <TouchableOpacity onPress={() => navigation.navigate('DetalleI')}>
+                            <TouchableOpacity onPress={() => navigation.navigate('Inicio')}>
                                 <HStack space={[2, 7]} justifyContent="space-between">
 
                                     <Avatar size="70px" source={{

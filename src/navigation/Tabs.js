@@ -6,11 +6,10 @@ import Icon from "react-native-vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
 
-export const Tabs = () => {
+export const Tabs = ({navigation}) => {
     return (
         <Tab.Navigator
             sceneAnimationEnabled={true}
-
             screenOptions={() => ({
                 headerShown: false,
                 tabBarShowLabel: true,
@@ -27,6 +26,7 @@ export const Tabs = () => {
                     <Icon name='person-sharp' size={22} color={color} />
                 )
             }} />
+            
 
         </Tab.Navigator>
 

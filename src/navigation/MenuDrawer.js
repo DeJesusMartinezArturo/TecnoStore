@@ -4,12 +4,12 @@ import Icon from "react-native-vector-icons/Ionicons";
 import CustomDrawer from "../components/CustomDrawer";
 
 import { Tabs } from "./Tabs";
-import ListaProducto from "../screens/ListaProducto";
-import ListaEmpresas from "../screens/ListaEmpresas";
-import ListaMaquina from "../screens/ListaMaquina";
-import ListaSubcategoria from "../screens/ListaSubcategoria";
-import ListaCategoria from "../screens/ListaCategoria";
 import { View, Text, ScrollView, SafeAreaView, ImageBackground, Touchable, TouchableOpacity } from "react-native";
+import ListaProducto from "../screens/Listas/ListaProducto";
+import ListaEmpresas from "../screens/Listas/ListaEmpresas";
+import ListaMaquina from "../screens/Listas/ListaMaquina";
+import ListaCategoria from "../screens/Listas/ListaCategoria";
+import ListaSubcategoria from "../screens/Listas/ListaSubcategoria";
 
 
 const Drawer = createDrawerNavigator();
@@ -27,7 +27,7 @@ export const MenuDrawer = ({ navigation}) => {
                 drawerIcon: ({ color }) => (
                     <Icon name='home-sharp' size={22} color={color} />
                 )
-            }} />
+            }}/>
             <Drawer.Screen name="Registro Productos" component={ListaProducto} options={{
                 drawerIcon: ({ color }) => (
                     <Icon name='bar-chart' size={22} color={color} />
@@ -53,9 +53,8 @@ export const MenuDrawer = ({ navigation}) => {
                     <Icon name='md-options' size={22} color={color} />
                 )
             }} />
-
+                
         </Drawer.Navigator>
         
     );
 }
-//Ionicons
