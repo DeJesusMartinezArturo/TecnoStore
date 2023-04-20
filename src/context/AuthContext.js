@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
                 let userInfo = res.data;
                 setUserInfo(userInfo);
                 setUserToken(userInfo.message);
-                // setUserToken('adjm');
+                
                 AsyncStorage.setItem('userInfo', JSON.stringify(userInfo));
                 AsyncStorage.setItem('userToken', userInfo.message);
 
@@ -85,14 +85,10 @@ export const AuthProvider = ({ children }) => {
 
     }, []);
 
-
-
-
     return (
         <AuthContext.Provider value={{ registro, login, logout, isLoading, userToken }}>
             {children}
         </AuthContext.Provider>
-
     )
 
 }

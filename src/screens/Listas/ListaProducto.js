@@ -11,7 +11,7 @@ const Stack = createNativeStackNavigator();
 
 const ListaProducto = ({ navigation }) => {
     return (
-        <Stack.Navigator initialRouteName="NuevoP" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="InicioP" screenOptions={{ headerShown: false }}>
             
             <Stack.Screen component={NuevoP} name='NuevoP' />
             <Stack.Screen component={InicioP} name='InicioP' />

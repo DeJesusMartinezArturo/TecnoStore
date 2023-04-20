@@ -12,7 +12,7 @@ import EditarE from "../Empresa.js/EditarE";
 
 const ListaEmpresas = () => {
     return (
-        <Stack.Navigator initialRouteName="NuevoE" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="InicioE" screenOptions={{ headerShown: false }}>
             <Stack.Screen component={NuevoE} name='NuevoE' />
             <Stack.Screen component={InicioE} name='InicioE' />
             <Stack.Screen component={DetallesE} name='DetallesE' />

@@ -8,7 +8,7 @@ import DetallesM from "../Maquina/DetallesM";
 import EditarM from "../Maquina/EditarM";
 
 const Stack = createNativeStackNavigator();
-
+ 
 
 const ListaMaquina = () => {
     return (

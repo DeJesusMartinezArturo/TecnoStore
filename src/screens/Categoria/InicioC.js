@@ -87,7 +87,6 @@ const InicioC = ({ navigation }) => {
 }
 export default InicioC;
 
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-    View,
-    Text,
-    TouchableOpacity,
-    ImageBackground,
-    StyleSheet,
-} from 'react-native';
-
+import { View, Text, TouchableOpacity, ImageBackground, StyleSheet } from 'react-native';
 import Icon from "react-native-vector-icons/Ionicons";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -115,9 +108,7 @@ const DetallesM = ({ navigation }) => {
 export default DetallesM;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1, backgroundColor: '#fff', paddingHorizontal: 50
-    },
+
     commandButton: {
         backgroundColor: '#4953E0',
         padding: 15,
@@ -132,48 +123,12 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginLeft: 20
     },
-    panel: {
-        padding: 20,
-        backgroundColor: '#FFFFFF',
-        paddingTop: 20,
-    },
-    header: {
-        backgroundColor: '#FFFFFF',
-        shadowColor: '#333333',
-        shadowOffset: { width: -1, height: -3 },
-        shadowRadius: 2,
-        shadowOpacity: 0.4,
-        // elevation: 5,
-        paddingTop: 20,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-    },
     panelHeader: {
         alignItems: 'center',
-    },
-    panelHandle: {
-        width: 40,
-        height: 8,
-        borderRadius: 4,
-        backgroundColor: '#00000040',
-        marginBottom: 10,
     },
     panelTitle: {
         fontSize: 27,
         height: 35,
-    },
-    panelSubtitle: {
-        fontSize: 14,
-        color: 'gray',
-        height: 30,
-        marginBottom: 10,
-    },
-    panelButton: {
-        padding: 13,
-        borderRadius: 10,
-        backgroundColor: '#FF6347',
-        alignItems: 'center',
-        marginVertical: 7,
     },
     panelButtonTitle: {
         textAlign: 'center',
@@ -188,6 +143,5 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         paddingBottom: 8,
         marginBottom: 25,
-
     }
 });

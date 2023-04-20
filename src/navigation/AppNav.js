@@ -8,9 +8,6 @@ import { MenuDrawer } from "./MenuDrawer";
 
 export default function AppNav() {
     const { userToken } = useContext(AuthContext);
-
-
-
     return (
         <NativeBaseProvider>
             <NavigationContainer>
@@ -19,3 +16,4 @@ export default function AppNav() {
         </NativeBaseProvider>
     )
 }
+5

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { View, Text, ImageBackground, Image, Touchable } from "react-native";
+import { View, Text, ImageBackground, Image, Touchable, Alert } from "react-native";
 import { DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer";
 import { Avatar } from "native-base";
 import Icon from "react-native-vector-icons/Ionicons";
@@ -31,6 +31,9 @@ const CustomDrawer = (props) => {
 
             </DrawerContentScrollView>
             <TouchableOpacity onPress={() => { logout() }} style={{ paddingVertical: 15 }}>
+
+
+
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <Icon name="exit-outline" size={22} />
                     <Text style={{ fontSize: 15, marginLeft: 5 }}>
@@ -38,6 +41,8 @@ const CustomDrawer = (props) => {
                     </Text>
                 </View>
             </TouchableOpacity>
+
+            
 
         </View >
 

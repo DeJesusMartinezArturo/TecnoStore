@@ -10,9 +10,9 @@ const Stack = createNativeStackNavigator();
 
 const ListaCategoria = () => {
     return (
-        <Stack.Navigator initialRouteName="NuevoC" screenOptions={{ headerShown: false }}>
-            <Stack.Screen component={NuevoC} name='NuevoC' />
+        <Stack.Navigator initialRouteName="InicioC" screenOptions={{ headerShown: false }}>
             <Stack.Screen component={InicioC} name='InicioC' />
+            <Stack.Screen component={NuevoC} name='NuevoC' />
             <Stack.Screen component={DetallesC} name='DetallesC' />
             <Stack.Screen component={EditarC} name='EditarC' />
         </Stack.Navigator>

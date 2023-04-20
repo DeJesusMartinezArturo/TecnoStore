@@ -1,6 +1,5 @@
 import React, { } from 'react';
 import Icon from "react-native-vector-icons/Ionicons";
-
 import {
     View,
     Text,
@@ -35,7 +34,6 @@ const NuevoE = ({ navigation }) => {
                             borderRadius: 15,
                             justifyContent: 'center',
                             alignItems: 'center'
-
                         }}>
                         <ImageBackground
                             style={{ height: 100, width: 100 }}
@@ -64,10 +62,8 @@ const NuevoE = ({ navigation }) => {
                         placeholderTextColor="#666666"
                         keyboardType="number-pad"
                         autoCorrect={false}
-
                     />
                 </View>
-
                 <View style={styles.action}>
                     <Icon style={{ marginRight: 5 }} name='person-outline' color='#000000' size={30} />
                     <TextInput
@@ -75,13 +71,8 @@ const NuevoE = ({ navigation }) => {
                         placeholderTextColor="#666666"
                         keyboardType="email-address"
                         autoCorrect={false}
-
                     />
                 </View>
-
-
-
-
             </View>
 
             <View style={{ paddingHorizontal: 30, flexDirection: 'row' }} >
@@ -107,7 +98,7 @@ export default NuevoE;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,  paddingHorizontal: 50, backgroundColor: '#fff'
+        flex: 1, paddingHorizontal: 50, backgroundColor: '#fff'
     },
     commandButton: {
         backgroundColor: '#4953E0',
@@ -123,22 +114,6 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginLeft: 20
     },
-    panel: {
-        padding: 20,
-        backgroundColor: '#FFFFFF',
-        paddingTop: 20,
-    },
-    header: {
-        backgroundColor: '#FFFFFF',
-        shadowColor: '#333333',
-        shadowOffset: { width: -1, height: -3 },
-        shadowRadius: 2,
-        shadowOpacity: 0.4,
-        // elevation: 5,
-        paddingTop: 20,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-    },
     panelHeader: {
         alignItems: 'center',
     },
@@ -148,23 +123,6 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         backgroundColor: '#00000040',
         marginBottom: 10,
-    },
-    panelTitle: {
-        fontSize: 27,
-        height: 35,
-    },
-    panelSubtitle: {
-        fontSize: 14,
-        color: 'gray',
-        height: 30,
-        marginBottom: 10,
-    },
-    panelButton: {
-        padding: 13,
-        borderRadius: 10,
-        backgroundColor: '#FF6347',
-        alignItems: 'center',
-        marginVertical: 7,
     },
     panelButtonTitle: {
         textAlign: 'center',

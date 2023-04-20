@@ -8,8 +8,8 @@ const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
     const { login } = useContext(AuthContext);
+            
     
-        
     return (
         <SafeAreaView style={styles.container}>
             <View>
@@ -36,7 +36,6 @@ const LoginScreen = ({ navigation }) => {
                 >
                     <Text style={styles.letraBoton}>
                         Iniciar Sesión</Text>
-
                 </TouchableOpacity>
 
 

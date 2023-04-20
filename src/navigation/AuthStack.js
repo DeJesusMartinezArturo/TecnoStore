@@ -6,11 +6,12 @@ import LoginScreen from "../screens/Auth/LoginScreen";
 import Register from "../screens/Auth/Register";
 import { MenuDrawer } from "./MenuDrawer";
 import EditPerfil from "../screens/EditPerfil";
-import DetalleI from "../screens/DetalleI";
+import DetalleRegistro from "../screens/DetalleRegistro";
+
 
 const Stack = createNativeStackNavigator();
 
-const AuthStack = ({ navigation }) => {
+const AuthStack = ({navigation}) => {
   return (
 
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -19,7 +20,8 @@ const AuthStack = ({ navigation }) => {
       <Stack.Screen component={LoginScreen} name='Login' />
       <Stack.Screen component={Register} name='Register' />
       <Stack.Screen component={EditPerfil} name='EditPerfil'/>
-      <Stack.Screen component={DetalleI} name='DetalleI'/>
+      <Stack.Screen component={DetalleRegistro} name='DetalleRegistro'/>
+
     </Stack.Navigator>
 
   )

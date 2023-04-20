@@ -1,7 +1,5 @@
 import React, { } from 'react';
 import Icon from "react-native-vector-icons/Ionicons";
-import { Avatar } from "native-base";
-
 import {
     View,
     Text,

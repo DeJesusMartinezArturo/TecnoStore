@@ -1,12 +1,5 @@
 import React from "react";
-import {
-    View,
-    Text,
-    TouchableOpacity,
-    ImageBackground,
-    StyleSheet,
-} from 'react-native';
-
+import { View, Text, TouchableOpacity, ImageBackground, StyleSheet, } from 'react-native';
 import Icon from "react-native-vector-icons/Ionicons";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -50,54 +43,24 @@ const DetallesP = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
             <View>
-                <Text style={{
-                    textAlign: 'center',
-                    fontWeight: '300',
-                    fontSize: 25,
-                    color: '#000000'
-                }}>
+                <Text style={styles.action} >
                     Nombre
                 </Text>
-                <Text style={{
-                    textAlign: 'center',
-                    fontWeight: '300',
-                    fontSize: 25,
-                    color: '#4953E0'
-                }} >Producto 1</Text>
+                <Text style={styles.action} >Producto 1</Text>
             </View>
 
             <View>
-                <Text style={{
-                    textAlign: 'center',
-                    fontWeight: '300',
-                    fontSize: 25,
-                    color: '#000000'
-                }}>
+                <Text style={styles.action} >
                     Categoria
                 </Text>
-                <Text style={{
-                    textAlign: 'center',
-                    fontWeight: '300',
-                    fontSize: 25,
-                    color: '#4953E0'
-                }} >Perros</Text>
+                <Text style={styles.action}  >Perros</Text>
             </View>
 
             <View>
-                <Text style={{
-                    textAlign: 'center',
-                    fontWeight: '300',
-                    fontSize: 25,
-                    color: '#000000'
-                }}>
+                <Text style={styles.action} >
                     Empresa
                 </Text>
-                <Text style={{
-                    textAlign: 'center',
-                    fontWeight: '300',
-                    fontSize: 25,
-                    color: '#4953E0'
-                }} >Expreso 1</Text>
+                <Text style={styles.exp} >Expreso 1</Text>
             </View>
 
             <View style={{ paddingHorizontal: 80, flexDirection: 'row', paddingTop: 20 }} >
@@ -121,8 +84,28 @@ const DetallesP = ({ navigation }) => {
 export default DetallesP;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1, backgroundColor: '#fff', paddingHorizontal: 50
+
+    commandButto: {
+        backgroundColor: '#ff0000',
+        padding: 15,
+        borderRadius: 10,
+        marginBottom: 20,
+        marginLeft: 20
+    },
+    panelButtonTitle: {
+        textAlign: 'center',
+        fontWeight: '900',
+        fontSize: 20,
+        color: '#fff'
+    },
+    panelHeader: {
+        alignItems: 'center',
+    },
+    action: {
+        textAlign: 'center',
+        fontWeight: '300',
+        fontSize: 25,
+        color: '#000000'
     },
     commandButton: {
         backgroundColor: '#4953E0',
@@ -138,62 +121,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         marginLeft: 20
     },
-    panel: {
-        padding: 20,
-        backgroundColor: '#FFFFFF',
-        paddingTop: 20,
-    },
-    header: {
-        backgroundColor: '#FFFFFF',
-        shadowColor: '#333333',
-        shadowOffset: { width: -1, height: -3 },
-        shadowRadius: 2,
-        shadowOpacity: 0.4,
-        // elevation: 5,
-        paddingTop: 20,
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-    },
-    panelHeader: {
-        alignItems: 'center',
-    },
-    panelHandle: {
-        width: 40,
-        height: 8,
-        borderRadius: 4,
-        backgroundColor: '#00000040',
-        marginBottom: 10,
-    },
-    panelTitle: {
-        fontSize: 27,
-        height: 35,
-    },
-    panelSubtitle: {
-        fontSize: 14,
-        color: 'gray',
-        height: 30,
-        marginBottom: 10,
-    },
-    panelButton: {
-        padding: 13,
-        borderRadius: 10,
-        backgroundColor: '#FF6347',
-        alignItems: 'center',
-        marginVertical: 7,
-    },
-    panelButtonTitle: {
+    exp: {
         textAlign: 'center',
-        fontWeight: '900',
-        fontSize: 20,
-        color: '#fff'
+        fontWeight: '300',
+        fontSize: 25,
+        color: '#4953E0'
     },
-    action: {
-        paddingTop: 2,
-        flexDirection: 'row',
-        borderBottomColor: '#ccc',
-        borderBottomWidth: 1,
-        paddingBottom: 8,
-        marginBottom: 25,
-
-    }
 });

@@ -64,7 +64,7 @@ const Perfil = ({ navigation }) => {
 
             </View>
             <View style={{ paddingHorizontal: 50 }}>
-                <TouchableOpacity onPress={() => navigation.navigate('Perfil')}
+                <TouchableOpacity onPress={() => navigation.navigate('Inicio')}
                     style={{
                         backgroundColor: '#4953E0',
                         padding: 15,
